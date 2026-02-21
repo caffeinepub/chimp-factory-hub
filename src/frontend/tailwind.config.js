@@ -65,18 +65,36 @@ export default {
                     'accent-foreground': 'oklch(var(--sidebar-accent-foreground))',
                     border: 'oklch(var(--sidebar-border))',
                     ring: 'oklch(var(--sidebar-ring))'
+                },
+                // Banana theme custom colors
+                banana: {
+                    light: 'oklch(0.92 0.15 90)',
+                    DEFAULT: 'oklch(0.85 0.18 90)',
+                    dark: 'oklch(0.75 0.20 85)',
+                    peel: 'oklch(0.78 0.20 60)'
+                },
+                jungle: {
+                    green: 'oklch(0.55 0.15 140)',
+                    brown: 'oklch(0.40 0.08 60)',
+                    wood: 'oklch(0.50 0.10 55)'
                 }
             },
             borderRadius: {
                 lg: 'var(--radius)',
                 md: 'calc(var(--radius) - 2px)',
-                sm: 'calc(var(--radius) - 4px)'
+                sm: 'calc(var(--radius) - 4px)',
+                xl: 'calc(var(--radius) + 4px)',
+                '2xl': 'calc(var(--radius) + 8px)',
+                '3xl': 'calc(var(--radius) + 12px)'
             },
             boxShadow: {
-                xs: '0 1px 2px 0 rgba(0,0,0,0.05)'
+                xs: '0 1px 2px 0 rgba(0,0,0,0.05)',
+                banana: '0 8px 20px oklch(0.85 0.18 90 / 0.3)',
+                'banana-lg': '0 12px 30px oklch(0.85 0.18 90 / 0.4)'
             },
             fontFamily: {
                 sans: [
+                    'Poppins',
                     'system-ui',
                     '-apple-system',
                     'BlinkMacSystemFont',
@@ -84,6 +102,12 @@ export default {
                     'Roboto',
                     '"Helvetica Neue"',
                     'Arial',
+                    'sans-serif'
+                ],
+                display: [
+                    'Fredoka',
+                    'Poppins',
+                    'system-ui',
                     'sans-serif'
                 ]
             },
@@ -95,14 +119,23 @@ export default {
                 'accordion-up': {
                     from: { height: 'var(--radix-accordion-content-height)' },
                     to: { height: '0' }
+                },
+                'bounce-subtle': {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-5px)' }
+                },
+                'glow': {
+                    '0%, 100%': { opacity: '1' },
+                    '50%': { opacity: '0.7' }
                 }
             },
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
-                'accordion-up': 'accordion-up 0.2s ease-out'
+                'accordion-up': 'accordion-up 0.2s ease-out',
+                'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite',
+                'glow': 'glow 2s ease-in-out infinite'
             }
         }
     },
     plugins: [typography, containerQueries, animate]
 };
-

@@ -4,83 +4,95 @@
 
 @layer base {
     :root {
-        --radius: 0.75rem;
-        --background: 0.99 0 0;
-        --foreground: 0.45 0.20 300;
-        --card: 1 0 0;
-        --card-foreground: 0.45 0.20 300;
-        --popover: 1 0 0;
-        --popover-foreground: 0.45 0.20 300;
-        --primary: 0.55 0.25 300;
-        --primary-foreground: 0.99 0 0;
-        --secondary: 0.96 0.05 310;
-        --secondary-foreground: 0.45 0.20 300;
-        --muted: 0.96 0.02 310;
-        --muted-foreground: 0.50 0.15 300;
-        --accent: 0.65 0.20 290;
-        --accent-foreground: 0.99 0 0;
+        --radius: 1rem;
+        /* Banana yellow theme - warm and vibrant */
+        --background: 0.98 0.05 85;
+        --foreground: 0.25 0.08 60;
+        --card: 0.99 0.03 90;
+        --card-foreground: 0.30 0.10 55;
+        --popover: 0.99 0.03 90;
+        --popover-foreground: 0.30 0.10 55;
+        /* Primary: Bright banana yellow */
+        --primary: 0.85 0.18 90;
+        --primary-foreground: 0.20 0.08 50;
+        /* Secondary: Warm orange */
+        --secondary: 0.75 0.18 50;
+        --secondary-foreground: 0.98 0.02 90;
+        --muted: 0.92 0.05 80;
+        --muted-foreground: 0.45 0.08 60;
+        /* Accent: Tropical orange-yellow */
+        --accent: 0.78 0.20 60;
+        --accent-foreground: 0.98 0.02 90;
         --destructive: 0.55 0.22 25;
         --destructive-foreground: 0.99 0 0;
-        --border: 0.90 0.05 310;
-        --input: 0.90 0.05 310;
-        --ring: 0.55 0.25 300;
-        --chart-1: 0.55 0.25 300;
-        --chart-2: 0.60 0.22 290;
-        --chart-3: 0.50 0.18 310;
-        --chart-4: 0.65 0.20 280;
-        --chart-5: 0.45 0.28 320;
-        --sidebar: 0.98 0 0;
-        --sidebar-foreground: 0.45 0.20 300;
-        --sidebar-primary: 0.55 0.25 300;
-        --sidebar-primary-foreground: 0.99 0 0;
-        --sidebar-accent: 0.96 0.05 310;
-        --sidebar-accent-foreground: 0.45 0.20 300;
-        --sidebar-border: 0.90 0.05 310;
-        --sidebar-ring: 0.55 0.25 300;
+        --border: 0.88 0.08 75;
+        --input: 0.88 0.08 75;
+        --ring: 0.85 0.18 90;
+        --chart-1: 0.85 0.18 90;
+        --chart-2: 0.75 0.18 50;
+        --chart-3: 0.70 0.15 70;
+        --chart-4: 0.80 0.20 45;
+        --chart-5: 0.65 0.16 85;
+        --sidebar: 0.96 0.04 85;
+        --sidebar-foreground: 0.30 0.10 55;
+        --sidebar-primary: 0.85 0.18 90;
+        --sidebar-primary-foreground: 0.20 0.08 50;
+        --sidebar-accent: 0.92 0.05 80;
+        --sidebar-accent-foreground: 0.30 0.10 55;
+        --sidebar-border: 0.88 0.08 75;
+        --sidebar-ring: 0.85 0.18 90;
     }
 
     .dark {
-        --background: 0.12 0 0;
-        --foreground: 0.75 0.20 300;
-        --card: 0.18 0 0;
-        --card-foreground: 0.75 0.20 300;
-        --popover: 0.15 0 0;
-        --popover-foreground: 0.75 0.20 300;
-        --primary: 0.65 0.25 300;
-        --primary-foreground: 0.12 0 0;
-        --secondary: 0.22 0.05 310;
-        --secondary-foreground: 0.75 0.20 300;
-        --muted: 0.22 0.02 310;
-        --muted-foreground: 0.60 0.15 300;
-        --accent: 0.45 0.20 290;
-        --accent-foreground: 0.98 0 0;
+        /* Dark mode: Deep browns and warm yellows */
+        --background: 0.18 0.05 50;
+        --foreground: 0.88 0.12 85;
+        --card: 0.22 0.06 45;
+        --card-foreground: 0.88 0.12 85;
+        --popover: 0.20 0.05 48;
+        --popover-foreground: 0.88 0.12 85;
+        /* Primary: Glowing banana yellow */
+        --primary: 0.82 0.20 85;
+        --primary-foreground: 0.15 0.05 45;
+        /* Secondary: Deep orange */
+        --secondary: 0.65 0.18 45;
+        --secondary-foreground: 0.95 0.05 85;
+        --muted: 0.28 0.06 50;
+        --muted-foreground: 0.70 0.10 75;
+        /* Accent: Warm tropical glow */
+        --accent: 0.72 0.20 55;
+        --accent-foreground: 0.95 0.05 85;
         --destructive: 0.60 0.20 25;
         --destructive-foreground: 0.98 0 0;
-        --border: 0.25 0.05 310;
-        --input: 0.25 0.05 310;
-        --ring: 0.65 0.25 300;
-        --chart-1: 0.65 0.25 300;
-        --chart-2: 0.70 0.22 290;
-        --chart-3: 0.60 0.18 310;
-        --chart-4: 0.75 0.20 280;
-        --chart-5: 0.55 0.28 320;
-        --sidebar: 0.15 0 0;
-        --sidebar-foreground: 0.75 0.20 300;
-        --sidebar-primary: 0.65 0.25 300;
-        --sidebar-primary-foreground: 0.98 0 0;
-        --sidebar-accent: 0.22 0.05 310;
-        --sidebar-accent-foreground: 0.75 0.20 300;
-        --sidebar-border: 0.25 0.05 310;
-        --sidebar-ring: 0.65 0.25 300;
+        --border: 0.32 0.08 50;
+        --input: 0.32 0.08 50;
+        --ring: 0.82 0.20 85;
+        --chart-1: 0.82 0.20 85;
+        --chart-2: 0.72 0.18 50;
+        --chart-3: 0.68 0.15 70;
+        --chart-4: 0.75 0.20 45;
+        --chart-5: 0.62 0.16 80;
+        --sidebar: 0.20 0.05 48;
+        --sidebar-foreground: 0.88 0.12 85;
+        --sidebar-primary: 0.82 0.20 85;
+        --sidebar-primary-foreground: 0.15 0.05 45;
+        --sidebar-accent: 0.28 0.06 50;
+        --sidebar-accent-foreground: 0.88 0.12 85;
+        --sidebar-border: 0.32 0.08 50;
+        --sidebar-ring: 0.82 0.20 85;
     }
 
     * {
         @apply border-border;
     }
+    
     body {
         @apply bg-background text-foreground;
         position: relative;
+        min-height: 100vh;
     }
+    
+    /* Dynamic game environment backgrounds */
     body::before {
         content: '';
         position: fixed;
@@ -88,12 +100,69 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url('/assets/generated/background-swirls.dim_1920x1080.png');
+        background-image: url('/assets/SampleScene_Custom..._16.02.2026_14-48-28.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        z-index: -2;
+        opacity: 0.3;
+    }
+    
+    /* Overlay for readability */
+    body::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, 
+            oklch(var(--background) / 0.85) 0%, 
+            oklch(var(--background) / 0.75) 50%,
+            oklch(var(--background) / 0.85) 100%);
         z-index: -1;
-        opacity: 0.4;
+    }
+}
+
+/* Banana-themed button styles */
+@layer components {
+    .btn-banana {
+        @apply relative overflow-hidden;
+        background: linear-gradient(135deg, 
+            oklch(0.85 0.18 90) 0%, 
+            oklch(0.78 0.20 60) 100%);
+        transition: all 0.3s ease;
+    }
+    
+    .btn-banana:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px oklch(0.85 0.18 90 / 0.4);
+        background: linear-gradient(135deg, 
+            oklch(0.88 0.20 90) 0%, 
+            oklch(0.82 0.22 60) 100%);
+    }
+    
+    .card-game-bg {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .card-game-bg::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.08;
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+    
+    .card-game-bg > * {
+        position: relative;
+        z-index: 1;
     }
 }

@@ -2,69 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-set-the-app-background-to-visually-match-the-user-uploaded-pink-purple-swirl-reference-image-using-a-full-screen-background-image-cover-centered-that-appears-behind-all-pages-home-and-privacy-policy",
-      "featureTitle": "Set the app background to visually match the user-uploaded pink/purple swirl reference image, using a full-screen background image (cover, centered) that appears behind all pages (Home and Privacy Policy).",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/index.css"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-8"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-update-the-app-s-styling-so-that-all-user-facing-text-is-purple-by-default-including-headings-body-text-navigation-text-and-footer-text-replacing-the-current-amber-orange-gradient-emphasis-where-it-affects-text-color",
-      "featureTitle": "Update the app’s styling so that all user-facing text is purple by default (including headings, body text, navigation text, and footer text), replacing the current amber/orange gradient emphasis where it affects text color.",
-      "files": [
-        "frontend/src/components/Footer.tsx",
-        "frontend/src/components/Header.tsx",
-        "frontend/src/index.css",
-        "frontend/src/pages/HomePage.tsx",
-        "frontend/src/pages/PrivacyPolicyPage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-9"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-remove-emojis-from-ui-text-content-including-hero-icons-and-any-emoji-prefixed-headings-and-replace-them-with-non-emoji-equivalents-plain-text-and-or-existing-icon-components-while-keeping-the-same-meaning",
-      "featureTitle": "Remove emojis from UI text/content (including hero icons and any emoji-prefixed headings) and replace them with non-emoji equivalents (plain text and/or existing icon components) while keeping the same meaning.",
-      "files": [
-        "frontend/src/components/Header.tsx",
-        "frontend/src/pages/HomePage.tsx",
-        "frontend/src/pages/PrivacyPolicyPage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-10"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-make-the-play-now-button-on-the-home-page-open-the-provided-meta-experiences-url-for-chimp-factory-when-clicked",
-      "featureTitle": "Make the “Play Now” button on the Home page open the provided Meta experiences URL for Chimp Factory when clicked.",
+      "featureId": "feature-remove-the-play-banana-split-now-button-from-the-homepage-component",
+      "featureTitle": "Remove the 'Play Banana Split Now!' button from the HomePage component",
       "files": [
         "frontend/src/pages/HomePage.tsx"
       ],
@@ -76,7 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-11"
+        "REQ-1"
       ],
       "confidence": "high"
     }

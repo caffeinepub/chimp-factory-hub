@@ -1,109 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Purple typography + swirl background + Play Now external link",
+  "title": "Remove 'Play Banana Split Now!' button",
   "requirements": [
     {
-      "id": "REQ-8",
-      "summary": "Add a full-screen swirl background image applied behind all pages with readability safeguards.",
+      "id": "REQ-1",
+      "summary": "Remove the 'Play Banana Split Now!' button from the HomePage component",
       "acceptanceCriteria": [
-        "A generated/processed swirl background image is added as a static asset under frontend/public/assets/generated.",
-        "The background is applied app-wide (not just the homepage) and scales to fill the viewport without tiling.",
-        "Foreground content remains readable on top of the background (e.g., via subtle overlay, blur, or card backgrounds)."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/public/assets/generated/background-swirls.dim_1920x1080.png",
-          "operation": "create",
-          "description": "Add the enhanced/upscaled swirl background image as a static asset at frontend/public/assets/generated/background-swirls.dim_1920x1080.png (derived from the provided swirl reference)."
-        },
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Apply an app-wide full-viewport background using the generated asset (frontend/public/assets/generated/background-swirls.dim_1920x1080.png) with cover/center/no-repeat and a subtle global overlay (e.g., via pseudo-element) to keep foreground content readable across Home and Privacy Policy."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Ensure the root layout supports the app-wide background presentation across routed pages (Home and Privacy Policy), including any necessary wrapper classes for consistent stacking/overlay behavior."
-        }
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "summary": "Update theme and page styling so all user-facing text defaults to purple and remove amber/orange gradient text emphasis.",
-      "acceptanceCriteria": [
-        "Across Home, Header navigation, Footer, and Privacy Policy page, the default text color renders in purple (including previously muted text).",
-        "Existing amber/orange text gradients on titles/branding are removed or replaced so the visible text color is purple.",
-        "Text remains legible against the new background in both light and dark mode."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Adjust the global theme CSS variables so default foreground and muted-foreground typography renders purple in both light and dark modes, replacing the current warm/amber emphasis where it affects text color."
-        },
-        {
-          "path": "frontend/src/components/Header.tsx",
-          "operation": "modify",
-          "description": "Remove/replace amber/orange gradient text styling in the header branding and ensure navigation text renders purple by default while preserving active-state affordance without amber/orange text emphasis. Verify the component's usage instructions before implementing."
-        },
-        {
-          "path": "frontend/src/pages/HomePage.tsx",
-          "operation": "modify",
-          "description": "Remove/replace amber/orange gradient text styling in the hero title and ensure body/description text (including previously muted text) reads as purple and remains legible over the new background. Verify the component's usage instructions before implementing."
-        },
-        {
-          "path": "frontend/src/pages/PrivacyPolicyPage.tsx",
-          "operation": "modify",
-          "description": "Replace amber/yellow per-game highlight text and other amber/orange text emphasis with purple equivalents, keeping content readable over the new background in both light and dark mode. Verify the component's usage instructions before implementing."
-        },
-        {
-          "path": "frontend/src/components/Footer.tsx",
-          "operation": "modify",
-          "description": "Ensure footer text defaults to purple and replace amber/orange hover emphasis (e.g., on the caffeine.ai link) with purple styling while keeping good contrast against the background. Verify the component's usage instructions before implementing."
-        }
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "summary": "Remove emojis from UI text/content and replace them with non-emoji equivalents while preserving meaning and layout balance.",
-      "acceptanceCriteria": [
-        "No emoji characters are displayed in Header or Home hero area.",
-        "Privacy Policy headings/content no longer include emoji characters (e.g., the lock emoji in the section title is removed).",
-        "Layout spacing remains visually balanced after emoji removal."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Header.tsx",
-          "operation": "modify",
-          "description": "Remove emoji characters from the header branding (e.g., the monkey emoji) and replace with plain text and/or existing icon components to preserve meaning and maintain spacing. Verify the component's usage instructions before implementing."
-        },
-        {
-          "path": "frontend/src/pages/HomePage.tsx",
-          "operation": "modify",
-          "description": "Remove emojis from the hero area and game cards (including any emoji-only icon blocks) and replace with plain text and/or existing icon components while keeping the layout visually balanced. Verify the component's usage instructions before implementing."
-        },
-        {
-          "path": "frontend/src/pages/PrivacyPolicyPage.tsx",
-          "operation": "modify",
-          "description": "Remove emoji characters from headings and callouts (e.g., the lock emoji in 'Information We Collect', prohibited symbol, and warning symbols) and replace with non-emoji text and/or existing icon components, without changing policy meaning/sections. Verify the component's usage instructions before implementing."
-        }
-      ]
-    },
-    {
-      "id": "REQ-11",
-      "summary": "Make the Home 'Play Now' button open the provided Meta experiences URL as a safe external link.",
-      "acceptanceCriteria": [
-        "Clicking “Play Now” navigates to https://www.meta.com/en-gb/experiences/chimp-factory/25694325243600813/?srsltid=AfmBOopTfM4KbYVw3sF3J36aq3QWgPDUT0W2PgqF3OIlTJEfW63azUvs.",
-        "The link uses safe external-link attributes when opened in a new tab (rel=\"noopener noreferrer\").",
-        "No backend changes are required for the redirect."
+        "The 'Play Banana Split Now!' button is completely removed from the HomePage",
+        "No visual remnants or placeholder elements remain where the button was located",
+        "The page layout adjusts naturally without the button"
       ],
       "file_operations": [
         {
           "path": "frontend/src/pages/HomePage.tsx",
           "operation": "modify",
-          "description": "Update the 'Play Now' control to be an external link to the provided Meta experiences URL, opened in a new tab with rel=\"noopener noreferrer\" (e.g., using the existing Button component with an anchor child). Verify the component's usage instructions before implementing."
+          "description": "Remove the 'Play Banana Split Now!' button element and any associated container divs or wrapper elements. Ensure the surrounding layout elements adjust naturally without leaving gaps or placeholder remnants. Review the component structure to identify and delete the button JSX and any related styling or spacing elements that were specifically for the button."
         }
       ]
     }

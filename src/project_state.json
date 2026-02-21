@@ -1,143 +1,22 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 7,
-  "summary": "Project now includes UI theming changes (purple text, new background inspired by provided reference) and a Play button redirect to the provided Meta experiences URL, in addition to the in-app Privacy Policy page.",
-  "architectural_notes": [
-    "Privacy Policy content provided by user; needs to be shown in a dedicated in-app tab/page.",
-    "User references two games: Chimp Factory and BananaSplit; Privacy Policy text currently written for Chimp Factory.",
-    "User provided updated Privacy Policy text (sections: Information We Collect, Asset Ripping & IP, Community Rules, Age & Safety, Changes to This Policy) and wants it shown when clicking the Privacy Policy navigation item.",
-    "User requests purple text across the UI and removal of emojis, overriding the earlier preference to avoid blue/purple as primary palette.",
-    "User requests a new background matching the provided pink swirl reference image/link.",
-    "Play button should redirect to: https://www.meta.com/en-gb/experiences/chimp-factory/25694325243600813/"
-  ],
-  "known_issues": [
-    "Clicking the Privacy Policy navigation item currently does not show the user’s provided Privacy Policy content (missing/incorrect content rendering)."
-  ],
-  "isFixRequest": false,
-  "imageRequirements": "## Edit Images\n- Upscale/enhance the uploaded swirl image into a full-screen background (yeah.png > background-swirls.dim_1920x1080.png)",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": true,
   "existing_features": [
     {
-      "id": "feature-add-a-new-user-accessible-navigation-item-labeled-privacy-policy-as-a-tab-menu-item-or-header-link-matching-the-app-s-existing-navigation-pattern-that-opens-a-dedicated-privacy-policy-view-page",
-      "title": "Add a new user-accessible navigation item labeled \"Privacy Policy\" (as a tab, menu item, or header link—matching the app’s existing navigation pattern) that opens a dedicated Privacy Policy view/page.",
+      "id": "feature-remove-the-play-banana-split-now-button-from-the-homepage-component",
+      "title": "Remove the 'Play Banana Split Now!' button from the HomePage component",
       "reqIds": [
         "REQ-1"
       ],
       "version": 1
-    },
-    {
-      "id": "feature-establish-a-coherent-visual-theme-for-the-privacy-policy-page-and-the-new-navigation-item-that-fits-a-playful-game-community-vibe-using-tailwind-styling-and-apply-it-consistently-within-this-feature-avoid-blue-purple-as-the-primary-palette",
-      "title": "Establish a coherent visual theme for the Privacy Policy page (and the new navigation item) that fits a playful game community vibe using Tailwind styling, and apply it consistently within this feature (avoid blue/purple as the primary palette).",
-      "reqIds": [
-        "REQ-3"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-fix-the-app-layout-routing-so-that-navigating-to-the-privacy-policy-route-actually-renders-the-privacy-policy-page-content-when-the-user-clicks-the-privacy-policy-navigation-item",
-      "title": "Fix the app layout routing so that navigating to the Privacy Policy route actually renders the Privacy Policy page content when the user clicks the \"Privacy Policy\" navigation item.",
-      "reqIds": [
-        "REQ-4"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-the-displayed-company-brand-name-for-the-chimp-factory-hub-from-redvelvet-production-redvelvet-productions-related-branding-to-exactly-redvelvet-productions-wherever-that-company-name-is-shown-in-the-ui",
-      "title": "Update the displayed company/brand name for the Chimp Factory Hub from \"RedVelvet Production\" / \"RedVelvet Productions\"-related branding to exactly \"RedVelvet Productions\" wherever that company name is shown in the UI.",
-      "reqIds": [
-        "REQ-5"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-replace-ensure-the-privacy-policy-page-content-includes-the-user-provided-privacy-policy-text-in-english-structured-with-clear-headings-and-bullet-lists-including-these-sections-1-information-we-collect-with-we-may-collect-and-we-do-not-collect-lists-plus-the-all-data-is-used-only-to-list-and-the-statement-about-not-selling-sharing-data-2-asset-ripping-intellectual-property-with-the-statement-that-all-assets-belong-to-chimp-factory-the-prohibition-the-if-you-list-and-the-we-reserve-the-right-to-list-3-community-rules-with-the-rule-list-and-consequences-plus-the-platform-reporting-note-4-age-safety-with-the-under-13-statement-and-encouragement-list-5-changes-to-this-policy-with-the-update-statement",
-      "title": "Replace/ensure the Privacy Policy page content includes the user-provided Privacy Policy text in English, structured with clear headings and bullet lists, including these sections: (1) \"Information We Collect\" with \"We may collect\" and \"We do not collect\" lists plus the \"All data is used only to\" list and the statement about not selling/sharing data; (2) \"Asset Ripping & Intellectual Property\" with the statement that all assets belong to Chimp Factory, the prohibition, the \"If you:\" list, and the \"We reserve the right to:\" list; (3) \"Community Rules\" with the rule list and consequences plus the platform reporting note; (4) \"Age & Safety\" with the under-13 statement and encouragement list; (5) \"Changes to This Policy\" with the update statement.",
-      "reqIds": [
-        "REQ-6"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-the-privacy-policy-page-styling-so-that-blue-purple-are-not-used-as-the-primary-palette-for-section-framing-icons-keep-the-playful-game-community-vibe-consistent-with-the-existing-warm-amber-orange-theme",
-      "title": "Update the Privacy Policy page styling so that blue/purple are not used as the primary palette for section framing/icons (keep the playful game community vibe consistent with the existing warm amber/orange theme).",
-      "reqIds": [
-        "REQ-7"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-set-the-app-background-to-visually-match-the-user-uploaded-pink-purple-swirl-reference-image-using-a-full-screen-background-image-cover-centered-that-appears-behind-all-pages-home-and-privacy-policy",
-      "title": "Set the app background to visually match the user-uploaded pink/purple swirl reference image, using a full-screen background image (cover, centered) that appears behind all pages (Home and Privacy Policy).",
-      "reqIds": [
-        "REQ-8"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-the-app-s-styling-so-that-all-user-facing-text-is-purple-by-default-including-headings-body-text-navigation-text-and-footer-text-replacing-the-current-amber-orange-gradient-emphasis-where-it-affects-text-color",
-      "title": "Update the app’s styling so that all user-facing text is purple by default (including headings, body text, navigation text, and footer text), replacing the current amber/orange gradient emphasis where it affects text color.",
-      "reqIds": [
-        "REQ-9"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-remove-emojis-from-ui-text-content-including-hero-icons-and-any-emoji-prefixed-headings-and-replace-them-with-non-emoji-equivalents-plain-text-and-or-existing-icon-components-while-keeping-the-same-meaning",
-      "title": "Remove emojis from UI text/content (including hero icons and any emoji-prefixed headings) and replace them with non-emoji equivalents (plain text and/or existing icon components) while keeping the same meaning.",
-      "reqIds": [
-        "REQ-10"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-make-the-play-now-button-on-the-home-page-open-the-provided-meta-experiences-url-for-chimp-factory-when-clicked",
-      "title": "Make the “Play Now” button on the Home page open the provided Meta experiences URL for Chimp Factory when clicked.",
-      "reqIds": [
-        "REQ-11"
-      ],
-      "version": 1
     }
   ],
-  "new_feature_requests": [
-    {
-      "id": "AR-1",
-      "summary": "Add a Privacy Policy tab/page that displays the provided Privacy Policy text (for Chimp Factory / BananaSplit).",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-3",
-      "summary": "Render the provided Privacy Policy content in English on the Privacy Policy view/page with clear typography and structure (sections, headings, and bullet lists) and include that it applies to the user’s two games: \"Chimp Factory\" and \"BananaSplit\".",
-      "reqIds": [
-        "REQ-2"
-      ],
-      "status": "pending"
-    },
-    {
-      "id": "AR-4",
-      "summary": "Update the displayed company name/label in Chimp Factory Hub from \"RedVelvet Productions\" to the user’s desired value (user requested a change).",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-5",
-      "summary": "Update the app UI styling to use purple text throughout and remove emojis from UI text.",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-6",
-      "summary": "Change the app background to match the user-provided reference (pink swirl-style background).",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-7",
-      "summary": "Update the Play button so clicking it navigates to the provided Meta experiences URL for Chimp Factory.",
-      "reqIds": [],
-      "status": "pending"
-    }
-  ],
-  "projectName": "Chimp Factory Hub",
+  "new_feature_requests": [],
+  "projectName": "Remove 'Play Banana Split Now!' button",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }
