@@ -2,9 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-remove-the-play-banana-split-now-button-from-the-homepage-component",
-      "featureTitle": "Remove the 'Play Banana Split Now!' button from the HomePage component",
+      "featureId": "feature-diagnose-and-resolve-the-deployment-error-that-occurred-during-the-build-and-deploy-sequence",
+      "featureTitle": "Diagnose and resolve the deployment error that occurred during the build and deploy sequence",
       "files": [
+        "frontend/src/index.css",
         "frontend/src/pages/HomePage.tsx"
       ],
       "components": [

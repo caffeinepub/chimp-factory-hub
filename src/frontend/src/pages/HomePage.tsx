@@ -19,7 +19,7 @@ export default function HomePage() {
           {/* Jungle Banner */}
           <div className="relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-banana-lg">
             <img 
-              src="/assets/SampleScene_Custom..._16.02.2026_14-33-01.png" 
+              src="/assets/generated/jungle-banner.dim_1200x300.png" 
               alt="Jungle Adventure" 
               className="w-full h-auto"
             />
@@ -72,7 +72,7 @@ export default function HomePage() {
             <Card className="card-game-bg border-3 border-secondary/40 hover:shadow-banana transition-all duration-300 hover:scale-[1.02] bg-card/90 backdrop-blur-sm">
               <div 
                 className="absolute inset-0 opacity-15 bg-cover bg-center"
-                style={{ backgroundImage: "url('/assets/SampleScene_Custom..._16.02.2026_14-33-26.png')" }}
+                style={{ backgroundImage: "url('/assets/generated/cave-entrance-warm.dim_1200x800.png')" }}
               />
               <CardHeader className="relative z-10">
                 <CardTitle className="text-2xl text-secondary flex items-center gap-2">
@@ -89,7 +89,7 @@ export default function HomePage() {
             <Card className="card-game-bg border-3 border-accent/40 hover:shadow-banana transition-all duration-300 hover:scale-[1.02] bg-card/90 backdrop-blur-sm">
               <div 
                 className="absolute inset-0 opacity-15 bg-cover bg-center"
-                style={{ backgroundImage: "url('/assets/SampleScene_Custom..._16.02.2026_14-44-43.png')" }}
+                style={{ backgroundImage: "url('/assets/generated/outdoor-landscape-bright.dim_1200x800.png')" }}
               />
               <CardHeader className="relative z-10">
                 <CardTitle className="text-2xl text-accent flex items-center gap-2">
@@ -106,7 +106,7 @@ export default function HomePage() {
             <Card className="card-game-bg border-3 border-jungle-wood/60 hover:shadow-banana transition-all duration-300 hover:scale-[1.02] bg-card/90 backdrop-blur-sm">
               <div 
                 className="absolute inset-0 opacity-15 bg-cover bg-center"
-                style={{ backgroundImage: "url('/assets/SampleScene_Custom..._16.02.2026_14-45-00.png')" }}
+                style={{ backgroundImage: "url('/assets/generated/wooden-structure-glow.dim_1200x800.png')" }}
               />
               <CardHeader className="relative z-10">
                 <CardTitle className="text-2xl text-jungle-wood flex items-center gap-2">
@@ -123,7 +123,7 @@ export default function HomePage() {
             <Card className="card-game-bg border-3 border-primary/40 hover:shadow-banana transition-all duration-300 hover:scale-[1.02] bg-card/90 backdrop-blur-sm">
               <div 
                 className="absolute inset-0 opacity-15 bg-cover bg-center"
-                style={{ backgroundImage: "url('/assets/SampleScene_Custom..._16.02.2026_14-47-50.png')" }}
+                style={{ backgroundImage: "url('/assets/generated/wood-floor-banana.dim_1200x600.png')" }}
               />
               <CardHeader className="relative z-10">
                 <CardTitle className="text-2xl text-primary flex items-center gap-2">

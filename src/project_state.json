@@ -7,8 +7,8 @@
   "isFixRequest": true,
   "existing_features": [
     {
-      "id": "feature-remove-the-play-banana-split-now-button-from-the-homepage-component",
-      "title": "Remove the 'Play Banana Split Now!' button from the HomePage component",
+      "id": "feature-diagnose-and-resolve-the-deployment-error-that-occurred-during-the-build-and-deploy-sequence",
+      "title": "Diagnose and resolve the deployment error that occurred during the build and deploy sequence",
       "reqIds": [
         "REQ-1"
       ],
@@ -16,7 +16,7 @@
     }
   ],
   "new_feature_requests": [],
-  "projectName": "Remove 'Play Banana Split Now!' button",
+  "projectName": "Fix deployment error",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }

@@ -1,12 +1,12 @@
 {
   "frontend/src/App.tsx": "Main application component with TanStack Router setup using Outlet for proper route rendering, defining routes for home and privacy policy pages with a shared layout including header and footer.",
-  "frontend/src/pages/HomePage.tsx": "Homepage featuring Banana Split game with jungle banner, comprehensive game description, environment showcase cards with game screenshot backgrounds, and Privacy Policy link, without the play button.",
+  "frontend/src/pages/HomePage.tsx": "Homepage featuring Banana Split game with jungle banner, comprehensive game description, environment showcase cards with generated asset backgrounds (cave, outdoor, wooden structures, interactive arenas), and Privacy Policy link.",
   "frontend/src/pages/PrivacyPolicyPage.tsx": "Privacy Policy page with preserved content and structure, styled with banana theme colors including warm yellow/orange cards, enhanced borders, and banana-themed shadows while maintaining all original text about data collection, asset protection, community rules, age requirements, and contact information.",
   "frontend/src/components/Header.tsx": "Sticky header with gradient text branding and navigation buttons styled with banana theme including active state highlighting, without the banana logo image.",
   "frontend/src/components/Footer.tsx": "Footer component with copyright information, animated heart icon with glow effect in secondary color, and caffeine.ai attribution link styled with banana theme colors.",
   "frontend/src/lib/utils.ts": "Utility function for merging Tailwind CSS classes using clsx and tailwind-merge.",
   "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks (currently empty as no backend queries are needed for this feature).",
-  "frontend/src/index.css": "Global styles with banana-themed OKLCH color system for light and dark modes, featuring game environment background using user-provided SampleScene screenshot with overlay for readability, and custom banana-themed button styles without texture overlays.",
+  "frontend/src/index.css": "Global styles with banana-themed OKLCH color system for light and dark modes, featuring jungle parallax background using generated asset with overlay for readability, and custom banana-themed button styles.",
   "frontend/tailwind.config.js": "Tailwind configuration extended with banana theme custom colors (banana-light, banana-dark, banana-peel, jungle-green/brown/wood), custom border radius variations, banana-themed shadows, Poppins/Fredoka font families, and custom animations (bounce-subtle, glow).",
   "frontend/index.html": "HTML entry point with document title set to \"RedVelvet Productions\"."
 }
