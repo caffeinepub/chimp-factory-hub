@@ -1,0 +1,20 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no methods or logic.",
+  "feature_evidence.json": "Lists implemented features, associated files, components, test IDs, and confidence for build tracking.",
+  "frontend-file-summaries.txt": "Pre-written summaries describing the purpose of each frontend file.",
+  "frontend/index.css": "Defines OKLCH-based theme variables and global styles for background and text colors.",
+  "frontend/index.html": "App entry HTML with root div and script loading the React main file.",
+  "frontend/src/App.tsx": "Sets up TanStack Router with layout wrapping home and privacy policy pages.",
+  "frontend/src/components/Footer.tsx": "Renders footer with current year, game names, and caffeine.ai attribution link.",
+  "frontend/src/components/Header.tsx": "Sticky navigation header with links to Home and Privacy Policy using lucide icons.",
+  "frontend/src/hooks/useActor.ts": "Creates and manages backend actor instances using identity-aware React Query logic.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides context and hooks for Internet Identity authentication and identity lifecycle.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder for future React Query backend hooks.",
+  "frontend/src/index.css": "Sets global styles, purple OKLCH theme, and fixed swirl background image behind all pages.",
+  "frontend/src/lib/utils.ts": "Utility to merge Tailwind CSS class names using clsx and tailwind-merge.",
+  "frontend/src/main.tsx": "Initializes React app with QueryClient and InternetIdentityProvider and renders App.",
+  "frontend/src/pages/HomePage.tsx": "Landing page showing hero text, two game feature cards, and quick links including privacy and an external play button.",
+  "frontend/src/pages/PrivacyPolicyPage.tsx": "Renders a styled privacy policy page with sections on collected data and policy details using cards and icons.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme colors, fonts, animations, and enabling plugins for typography, container queries, and animations.",
+  "project_state.json": "Metadata file tracking project state, theming changes, requirements, and known issues for the app."
+}

@@ -1,0 +1,12 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup using Outlet for proper route rendering, defining routes for home and privacy policy pages with a shared layout including header and footer.",
+  "frontend/src/pages/HomePage.tsx": "Home page component featuring hero section with RedVelvet Productions branding in purple, game cards for Chimp Factory and BananaSplit with lucide-react icons replacing emojis, and Play Now button linking to Meta experiences URL as external link.",
+  "frontend/src/pages/PrivacyPolicyPage.tsx": "Comprehensive privacy policy page displaying all five sections with structured cards, lucide-react icons replacing all emojis, and purple color-coded visual hierarchy with improved readability over the swirl background.",
+  "frontend/src/components/Header.tsx": "Sticky header component with logo displaying \"RedVelvet Productions\" in purple, navigation buttons for Home and Privacy Policy with icon-only mobile view, no emojis.",
+  "frontend/src/components/Footer.tsx": "Footer component displaying copyright for RedVelvet Productions with both games, attribution to caffeine.ai with UTM tracking, and purple heart icon matching the app theme.",
+  "frontend/src/lib/utils.ts": "Utility function for merging Tailwind CSS classes using clsx and tailwind-merge.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks (currently empty as no backend queries are needed for this feature).",
+  "frontend/src/index.css": "Global styles with OKLCH purple color system for both light and dark modes, featuring a fixed full-viewport swirl background image with opacity overlay for readability.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended theme matching the playful game aesthetic using warm color tokens.",
+  "frontend/index.html": "HTML entry point with document title set to \"RedVelvet Productions\"."
+}

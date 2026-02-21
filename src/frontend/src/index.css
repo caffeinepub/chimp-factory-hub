@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        --background: 0.99 0 0;
+        --foreground: 0.45 0.20 300;
+        --card: 1 0 0;
+        --card-foreground: 0.45 0.20 300;
+        --popover: 1 0 0;
+        --popover-foreground: 0.45 0.20 300;
+        --primary: 0.55 0.25 300;
+        --primary-foreground: 0.99 0 0;
+        --secondary: 0.96 0.05 310;
+        --secondary-foreground: 0.45 0.20 300;
+        --muted: 0.96 0.02 310;
+        --muted-foreground: 0.50 0.15 300;
+        --accent: 0.65 0.20 290;
+        --accent-foreground: 0.99 0 0;
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.99 0 0;
+        --border: 0.90 0.05 310;
+        --input: 0.90 0.05 310;
+        --ring: 0.55 0.25 300;
+        --chart-1: 0.55 0.25 300;
+        --chart-2: 0.60 0.22 290;
+        --chart-3: 0.50 0.18 310;
+        --chart-4: 0.65 0.20 280;
+        --chart-5: 0.45 0.28 320;
+        --sidebar: 0.98 0 0;
+        --sidebar-foreground: 0.45 0.20 300;
+        --sidebar-primary: 0.55 0.25 300;
+        --sidebar-primary-foreground: 0.99 0 0;
+        --sidebar-accent: 0.96 0.05 310;
+        --sidebar-accent-foreground: 0.45 0.20 300;
+        --sidebar-border: 0.90 0.05 310;
+        --sidebar-ring: 0.55 0.25 300;
+    }
+
+    .dark {
+        --background: 0.12 0 0;
+        --foreground: 0.75 0.20 300;
+        --card: 0.18 0 0;
+        --card-foreground: 0.75 0.20 300;
+        --popover: 0.15 0 0;
+        --popover-foreground: 0.75 0.20 300;
+        --primary: 0.65 0.25 300;
+        --primary-foreground: 0.12 0 0;
+        --secondary: 0.22 0.05 310;
+        --secondary-foreground: 0.75 0.20 300;
+        --muted: 0.22 0.02 310;
+        --muted-foreground: 0.60 0.15 300;
+        --accent: 0.45 0.20 290;
+        --accent-foreground: 0.98 0 0;
+        --destructive: 0.60 0.20 25;
+        --destructive-foreground: 0.98 0 0;
+        --border: 0.25 0.05 310;
+        --input: 0.25 0.05 310;
+        --ring: 0.65 0.25 300;
+        --chart-1: 0.65 0.25 300;
+        --chart-2: 0.70 0.22 290;
+        --chart-3: 0.60 0.18 310;
+        --chart-4: 0.75 0.20 280;
+        --chart-5: 0.55 0.28 320;
+        --sidebar: 0.15 0 0;
+        --sidebar-foreground: 0.75 0.20 300;
+        --sidebar-primary: 0.65 0.25 300;
+        --sidebar-primary-foreground: 0.98 0 0;
+        --sidebar-accent: 0.22 0.05 310;
+        --sidebar-accent-foreground: 0.75 0.20 300;
+        --sidebar-border: 0.25 0.05 310;
+        --sidebar-ring: 0.65 0.25 300;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+        position: relative;
+    }
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/assets/generated/background-swirls.dim_1920x1080.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        z-index: -1;
+        opacity: 0.4;
+    }
+}

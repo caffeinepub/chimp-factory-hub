@@ -1,0 +1,105 @@
+{
+  "kind": "build_request",
+  "title": "Apply purple text + swirl background and redirect Play button",
+  "projectName": "Chimp Factory Hub",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-8",
+      "text": "Set the app background to visually match the user-uploaded pink/purple swirl reference image, using a full-screen background image (cover, centered) that appears behind all pages (Home and Privacy Policy).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "can you make the backround look like this"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A generated/processed swirl background image is added as a static asset under frontend/public/assets/generated.",
+        "The background is applied app-wide (not just the homepage) and scales to fill the viewport without tiling.",
+        "Foreground content remains readable on top of the background (e.g., via subtle overlay, blur, or card backgrounds)."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Update the app’s styling so that all user-facing text is purple by default (including headings, body text, navigation text, and footer text), replacing the current amber/orange gradient emphasis where it affects text color.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "make all the text purple"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Across Home, Header navigation, Footer, and Privacy Policy page, the default text color renders in purple (including previously muted text).",
+        "Existing amber/orange text gradients on titles/branding are removed or replaced so the visible text color is purple.",
+        "Text remains legible against the new background in both light and dark mode."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Remove emojis from UI text/content (including hero icons and any emoji-prefixed headings) and replace them with non-emoji equivalents (plain text and/or existing icon components) while keeping the same meaning.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "remove the emojies"
+        ]
+      },
+      "acceptanceCriteria": [
+        "No emoji characters are displayed in Header or Home hero area.",
+        "Privacy Policy headings/content no longer include emoji characters (e.g., the lock emoji in the section title is removed).",
+        "Layout spacing remains visually balanced after emoji removal."
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Make the “Play Now” button on the Home page open the provided Meta experiences URL for Chimp Factory when clicked.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "when you click play it takes you to https://www.meta.com/en-gb/experiences/chimp-factory/25694325243600813/?srsltid=AfmBOopTfM4KbYVw3sF3J36aq3QWgPDUT0W2PgqF3OIlTJEfW63azUvs"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Clicking “Play Now” navigates to https://www.meta.com/en-gb/experiences/chimp-factory/25694325243600813/?srsltid=AfmBOopTfM4KbYVw3sF3J36aq3QWgPDUT0W2PgqF3OIlTJEfW63azUvs.",
+        "The link uses safe external-link attributes when opened in a new tab (rel=\"noopener noreferrer\").",
+        "No backend changes are required for the redirect."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files under frontend/src/components/ui or any paths listed in frontend.immutablePaths.",
+    "Keep the backend as a single Motoko actor; no backend work is needed for this change."
+  ],
+  "nonGoals": [
+    "Do not add new authentication providers or third-party integrations beyond a simple external link.",
+    "Do not change Privacy Policy text meaning/sections beyond removing emojis and applying the new purple text styling.",
+    "Do not implement real-time features or any backend persistence for the Play button behavior."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": [
+      "Upscale/enhance the uploaded swirl image into a full-screen background (yeah.png > background-swirls.dim_1920x1080.png)"
+    ]
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}
